@@ -29,10 +29,10 @@ public class Main {
 		
 		do{
 			
-		System.out.println("1 - ARQUIVO COM UMA PORCENTAGEM DE ERROS APENAS NA HORIZONTAL SEGUINDO PADRAO DA DIAGONAL?"+quebralinha+"2 - ARQUIVO SEGUINDO O PADRAO DE FALHAS NOS TSVs DO PAPER?"+quebralinha+"3 - ARQUIVOS PUROS?");
+		System.out.println("1 - ARQUIVO COM UMA PORCENTAGEM DE ERROS APENAS NA HORIZONTAL SEGUINDO PADRAO DA DIAGONAL?"+quebralinha+"2 - ARQUIVO SEGUINDO O PADRAO DE FALHAS NOS TSVs DO PAPER?"+quebralinha+"3 - ARQUIVOS PUROS?"+quebralinha+"4 - COMPARAÇÃO DO IMPACTO DO PADRÃO DA DIAGONAL ENTRE DUAS TOPOLOGIAS?");
 		ans = sc.next();
 		
-		}while((!ans.equalsIgnoreCase("1")) && (!ans.equalsIgnoreCase("2")) && (!ans.equalsIgnoreCase("3")));
+		}while((!ans.equalsIgnoreCase("1")) && (!ans.equalsIgnoreCase("2")) && (!ans.equalsIgnoreCase("3")) && (!ans.equalsIgnoreCase("4")));
 		
 		
 		if(ans.equalsIgnoreCase("1"))
@@ -70,10 +70,19 @@ public class Main {
 			}
 		}
 
-		else{
+		else if(ans.equalsIgnoreCase("3")){
 			Gerador g = new Gerador(x,y,z,n);
 			sc.close();
 			g.Gerar();
+			System.out.println("ARQUIVOS GERADOS COM SUCESSO!");
+		}
+		
+		else if(ans.equalsIgnoreCase("4")){
+			System.out.println("QUAL PORCENTAGEM DE FALHAS NA HORIZONTAL?");
+			float perc = sc.nextFloat();
+			Gerador g = new Gerador(x,y,z,n,perc,true);
+			sc.close();
+			g.CompararPadraoDiagonalePuro();
 			System.out.println("ARQUIVOS GERADOS COM SUCESSO!");
 		}
 
