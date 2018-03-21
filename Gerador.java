@@ -54,7 +54,7 @@ public Gerador (int x , int y , int z,int n, float percentage){
 	
 }
 
-//Construtor específico para o método de comparação entre topologias puras e utilizadoras do padrão da diagonal.
+//Construtor especÃ­fico para o mÃ©todo de comparaÃ§Ã£o entre topologias puras e utilizadoras do padrÃ£o da diagonal.
 public Gerador (int x , int y , int z,int n, float percentage, boolean aux){
 	
 	this.x = x;
@@ -764,7 +764,7 @@ public void CompararPadraoDiagonalePuro() throws IOException{
 		}
 	}
 		
-//Printa número de erros conseguidos e número de erros de fato.
+//Printa nÃºmero de erros conseguidos e nÃºmero de erros de fato.
 System.out.println(erros);
 System.out.println((this.percentage/100)*this.z*(this.x-1)*this.y*2);
 
