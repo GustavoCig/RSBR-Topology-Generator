@@ -29,7 +29,7 @@ public class Main {
 		
 		do{
 			
-		System.out.println("1 - ARQUIVO COM UMA PORCENTAGEM DE ERROS APENAS NA HORIZONTAL SEGUINDO PADRAO DA DIAGONAL?"+quebralinha+"2 - ARQUIVO SEGUINDO O PADRAO DE FALHAS NOS TSVs DO PAPER?"+quebralinha+"3 - ARQUIVOS PUROS?"+quebralinha+"4 - COMPARA«√O DO IMPACTO DO PADR√O DA DIAGONAL ENTRE DUAS TOPOLOGIAS?");
+		System.out.println("1 - ARQUIVO COM UMA PORCENTAGEM DE ERROS APENAS NA HORIZONTAL SEGUINDO PADRAO DA DIAGONAL?"+quebralinha+"2 - ARQUIVO SEGUINDO O PADRAO DE FALHAS NOS TSVs DO PAPER?"+quebralinha+"3 - ARQUIVOS PUROS?"+quebralinha+"4 - COMPARA√á√ÉO DO IMPACTO DO PADR√ÉO DA DIAGONAL ENTRE DUAS TOPOLOGIAS?");
 		ans = sc.next();
 		
 		}while((!ans.equalsIgnoreCase("1")) && (!ans.equalsIgnoreCase("2")) && (!ans.equalsIgnoreCase("3")) && (!ans.equalsIgnoreCase("4")));
